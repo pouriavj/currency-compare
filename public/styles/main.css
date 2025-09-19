@@ -1,85 +1,125 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
-
 body {
-    background: #f0f2f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    width: 360px;
-    text-align: center;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 h1 {
-    margin-bottom: 1.5rem;
-    color: #333;
-    font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
 }
 
-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
+.currency-form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
-select, button {
-    width: 48%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-button {
-    background: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
+/* Dropdowns */
+.form-group select {
+  padding: 10px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f9fafb;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-button:hover {
-    background: #45a049;
+/* Focus effect */
+.form-group select:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Hover effect for dropdowns */
+.form-group select:hover {
+  border-color: #4CAF50;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+  background-color: #f0fdf4;
+}
+
+/* Button */
+.form-group button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;  /* smooth transition for hover */
+}
+
+/* Hover animation for button */
+.form-group button:hover {
+  background-color: #45a049;         
+  transform: translateY(-2px);       /* subtle lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* soft shadow */
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.preview {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  color: #444;
 }
 
 .rates {
-    text-align: left;
+  margin-top: 25px;
 }
 
 .rate-card {
-    background: #f9f9f9;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-left: 4px solid #4CAF50;
-    border-radius: 8px;
-    transition: 0.3s;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f9fafb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-size: 1.1rem;
+  color: #333;
 }
 
-.rate-card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+.rate-card strong {
+  color: #4CAF50;
 }
 
-.rate-card p {
-    font-size: 1rem;
-    color: #333;
+/* Spinner */
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #4CAF50;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
 }
 
-.placeholder {
-    color: #888;
-    font-style: italic;
+.number{
+    font-size: 35px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

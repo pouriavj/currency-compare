@@ -1,49 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Currency Compare</title>
-<link rel="stylesheet" href="styles/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Compare</title>
+  <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-
-<div class="container">
+  <div class="container">
     <h1>Currency Compare</h1>
-    
-    <form action="/" method="post">
+
+    <form action="/" method="post" class="currency-form">
+      <div class="form-group">
         <select name="currencyFrom">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
-            <option value="JPY">JPY</option>
-            <!-- Add more currencies as needed -->
+          <option value="USD" <%= currencyFrom === 'USD' ? 'selected' : '' %>>USD</option>
+          <option value="EUR" <%= currencyFrom === 'EUR' ? 'selected' : '' %>>EUR</option>
+          <option value="GBP" <%= currencyFrom === 'GBP' ? 'selected' : '' %>>GBP</option>
+          <option value="JPY" <%= currencyFrom === 'JPY' ? 'selected' : '' %>>JPY</option>
+          <option value="AUD" <%= currencyFrom === 'AUD' ? 'selected' : '' %>>AUD</option>
+          <option value="CAD" <%= currencyFrom === 'CAD' ? 'selected' : '' %>>CAD</option>
+          <option value="CHF" <%= currencyFrom === 'CHF' ? 'selected' : '' %>>CHF</option>
+          <option value="CNY" <%= currencyFrom === 'CNY' ? 'selected' : '' %>>CNY</option>
+          <option value="BGN" <%= currencyFrom === 'BGN' ? 'selected' : '' %>>BGN</option>
+          <option value="CZK" <%= currencyFrom === 'CZK' ? 'selected' : '' %>>CZK</option>
+          <option value="DKK" <%= currencyFrom === 'DKK' ? 'selected' : '' %>>DKK</option>
+          <option value="HKD" <%= currencyFrom === 'HKD' ? 'selected' : '' %>>HKD</option>
+          <option value="HUF" <%= currencyFrom === 'HUF' ? 'selected' : '' %>>HUF</option>
+          <option value="INR" <%= currencyFrom === 'INR' ? 'selected' : '' %>>INR</option>
+          <option value="KRW" <%= currencyFrom === 'KRW' ? 'selected' : '' %>>KRW</option>
+          <option value="MYR" <%= currencyFrom === 'MYR' ? 'selected' : '' %>>MYR</option>
+          <option value="NOK" <%= currencyFrom === 'NOK' ? 'selected' : '' %>>NOK</option>
+          <option value="NZD" <%= currencyFrom === 'NZD' ? 'selected' : '' %>>NZD</option>
+          <option value="PHP" <%= currencyFrom === 'PHP' ? 'selected' : '' %>>PHP</option>
+          <option value="PLN" <%= currencyFrom === 'PLN' ? 'selected' : '' %>>PLN</option>
+          <option value="RON" <%= currencyFrom === 'RON' ? 'selected' : '' %>>RON</option>
+          <option value="SEK" <%= currencyFrom === 'SEK' ? 'selected' : '' %>>SEK</option>
+          <option value="SGD" <%= currencyFrom === 'SGD' ? 'selected' : '' %>>SGD</option>
+          <option value="THB" <%= currencyFrom === 'THB' ? 'selected' : '' %>>THB</option>
+          <option value="TRY" <%= currencyFrom === 'TRY' ? 'selected' : '' %>>TRY</option>
+          <option value="ZAR" <%= currencyFrom === 'ZAR' ? 'selected' : '' %>>ZAR</option>
+          
+
         </select>
 
+        <span class="arrow">→</span>
+
         <select name="currencyTo">
-            <option value="EUR">EUR</option>
-            <option value="USD">USD</option>
-            
-            <!-- Add more currencies as needed -->
+          <option value="USD" <%= currencyTo === 'USD' ? 'selected' : '' %>>USD</option>
+          <option value="EUR" <%= currencyTo === 'EUR' ? 'selected' : '' %>>EUR</option>
         </select>
 
         <button type="submit">Get Rates</button>
+      </div>
     </form>
 
+    <p class="preview">
+      Comparing: <strong><%= currencyFrom %> → <%= currencyTo %></strong>
+    </p>
+
     <div class="rates">
-        <!-- ============================= -->
-        <!-- Inject your API data here with EJS -->
-        <!-- ============================= -->
-        
-        <div class="rate-card">
-            <p>
-                <!-- Example EJS injection -->
-                <%= currency %>
-            </p>
-        </div>
-
+      <div class="rate-card">
+        <% if (loading) { %>
+          <div class="loader"></div>
+          <p>Fetching rates...</p>
+        <% } else { %>
+          <p class="number"><strong><%= currency %></strong></p>
+        <% } %>
+      </div>
     </div>
-</div>
+  </div>
 
+  <script>
+    const form = document.querySelector(".currency-form");
+    const rateCard = document.querySelector(".rate-card");
+
+    form.addEventListener("submit", () => {
+      rateCard.innerHTML = `
+        <div class="loader"></div>
+        <p>Fetching rates...</p>
+      `;
+    });
+  </script>
 </body>
 </html>
