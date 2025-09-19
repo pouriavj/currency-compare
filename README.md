@@ -13,7 +13,7 @@ A clean and interactive **currency converter and comparator** web app. Compare l
 
 ## ✨ Features
 
-- Compare live exchange rates between any two currencies.
+- Compare live exchange rates for the supported currencies.
 - Clean, responsive, and modern design.
 - Animated loading indicator while fetching rates.
 - Maintains selected currencies after submitting.
