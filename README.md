@@ -47,11 +47,11 @@ const port = 3000; // change 3000 to any port number you want
 Then restart the server to use the new port.
 ## 💻 Usage Instructions
 
-1. Select the **currency to convert from** from the first dropdown.  
-2. Select the **currency to convert to** from the second dropdown.  
+1. Select the currency you want to convert.  
+2. Select the currency you want to convert into.  
 3. Click **Get Rates**.  
 4. The converted amount will appear instantly with a loading spinner while fetching the data.  
-5. The selected currencies remain selected after submission for easy comparison.
+5. The selected currencies remain highlighted after submission for easy comparison.
 
 ## 🛠️ Built With
 
