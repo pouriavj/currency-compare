@@ -20,12 +20,25 @@ A clean and interactive **currency converter and comparator** web app. Compare l
 - Simple and easy-to-use interface.
 
 ---
+## 🚀 How to Run the Project
 
-## 🚀 How to Run Locally
+Follow these steps to run the project locally:
 
-Follow these steps to get the project running locally:
-
-1. **Clone the repository**
+**Step 1: Clone the repository**
 ```bash
-git clone https://github.com/your-username/currency-compare.git
+git clone https://github.com/pouriavj/currency-compare.git
 cd currency-compare
+```
+**Step 2: Install dependencies**
+```bash
+npm install
+```
+**Step 3: Start the server**
+```bash
+node index.js
+```
+By default, the website will run on http://localhost:3000.
+
+Step 4: Change the port number (optional)
+Open index.js and modify the line:
+
