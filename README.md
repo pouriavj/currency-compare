@@ -53,6 +53,10 @@ Then restart the server to use the new port.
 4. The converted amount will appear instantly with a loading spinner while fetching the data.  
 5. The selected currencies remain highlighted after submission for easy comparison.
 
+### Available Currencies
+
+- USD, EUR, GBP, JPY, AUD, CAD, CHF, CNY, BGN, CZK, DKK, HKD, HUF, INR, KRW, MYR, NOK, NZD, PHP, PLN, RON, SEK, SGD, THB, TRY, ZAR
+- 
 ## 🛠️ Built With
 
 - [Node.js](https://nodejs.org/)
