@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currency Compare</title>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Currency Compare</h1>
+    
+    <form action="/" method="post">
+        <select name="currencyFrom">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <!-- Add more currencies as needed -->
+        </select>
+
+        <select name="currencyTo">
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+            
+            <!-- Add more currencies as needed -->
+        </select>
+
+        <button type="submit">Get Rates</button>
+    </form>
+
+    <div class="rates">
+        <!-- ============================= -->
+        <!-- Inject your API data here with EJS -->
+        <!-- ============================= -->
+        
+        <div class="rate-card">
+            <p>
+                <!-- Example EJS injection -->
+                <%= currency %>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
