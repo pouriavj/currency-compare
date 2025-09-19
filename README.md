@@ -6,7 +6,7 @@ A clean and interactive **currency converter and comparator** web app. Compare l
 
 ## 📸 Screenshot
 
-![Page Screenshot](./currency-compare.png)  
+![Page Screenshot](./currency-compare.jpg)  
 *Replace `screenshot.png` with your actual screenshot of the page.*
 
 ---
