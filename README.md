@@ -56,7 +56,7 @@ Then restart the server to use the new port.
 ### Available Currencies
 
 - USD, EUR, GBP, JPY, AUD, CAD, CHF, CNY, BGN, CZK, DKK, HKD, HUF, INR, KRW, MYR, NOK, NZD, PHP, PLN, RON, SEK, SGD, THB, TRY, ZAR
-- 
+
 ## 🛠️ Built With
 
 - [Node.js](https://nodejs.org/)
