@@ -44,3 +44,4 @@ Open index.js and modify the line:
 ```javascript
 const port = 3000; // change 3000 to any port number you want
 ```
+Then restart the server to use the new port.
