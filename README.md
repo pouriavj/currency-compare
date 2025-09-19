@@ -52,3 +52,17 @@ Then restart the server to use the new port.
 3. Click **Get Rates**.  
 4. The converted amount will appear instantly with a loading spinner while fetching the data.  
 5. The selected currencies remain selected after submission for easy comparison.
+
+## 🛠️ Built With
+
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [EJS](https://ejs.co/)
+- HTML, CSS, JavaScript
+
+---
+
+## 📄 License
+
+This project is open-source and free to use.
+
