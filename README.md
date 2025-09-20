@@ -57,6 +57,11 @@ Then restart the server to use the new port.
 
 - USD, EUR, GBP, JPY, AUD, CAD, CHF, CNY, BGN, CZK, DKK, HKD, HUF, INR, KRW, MYR, NOK, NZD, PHP, PLN, RON, SEK, SGD, THB, TRY, ZAR
 
+### 📡 API Source  
+
+This project uses the [Frankfurter API](https://www.frankfurter.dev/) to fetch live currency exchange rates.
+
+
 ## 🛠️ Built With
 
 - [Node.js](https://nodejs.org/)
