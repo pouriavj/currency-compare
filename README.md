@@ -4,9 +4,11 @@ A clean and interactive **currency converter and comparator** web app. Compare l
 
 ---
 
-## 📸 Screenshot
+## 🎬 Demo
 
-![Page Screenshot](./screenshot.jpg)  
+![Currency Compare Demo](./demo.gif)  
+*(Replace `./demo.gif` with the path to your GIF file in the repo)*
+
 
 
 ---
