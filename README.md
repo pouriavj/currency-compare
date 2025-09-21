@@ -6,8 +6,8 @@ A clean and interactive **currency converter and comparator** web app. Compare l
 
 ## 🎬 Demo
 
-![Currency Compare Demo](./demo.gif)  
-*(Replace `./demo.gif` with the path to your GIF file in the repo)*
+![Currency Compare Demo](./currencyCompareGif.gif)  
+
 
 
 
