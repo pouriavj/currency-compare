@@ -3,6 +3,7 @@
 ![Node.js](https://img.shields.io/badge/Node.js-18-green?logo=node.js)
 ![Express](https://img.shields.io/badge/Express.js-4.18-black?logo=express)
 ![EJS](https://img.shields.io/badge/EJS-3.1-red?logo=ejs)
+![Axios](https://img.shields.io/badge/Axios-1.5-blue?logo=axios)
 ![ES6](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
